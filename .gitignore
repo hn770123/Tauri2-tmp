@@ -1,0 +1,12 @@
+node_modules/
+dist/
+build/
+backend/node_modules/
+backend/database.sqlite
+tauri-app/node_modules/
+tauri-app/src-tauri/target/
+.DS_Store
+*.log
+node_modules
+backend/node_modules
+tauri-app/node_modules
