@@ -34,6 +34,40 @@
         <button type="submit">Greet</button>
       </form>
       <p id="greet-msg"></p>
+
+      <hr style="margin: 2rem 0; border: 1px solid #ccc;" />
+
+      <h2>認証システム (Node.js + SQLite)</h2>
+
+      <!-- ログイン後コンテンツ表示エリア -->
+      <div id="auth-content" style="display: none;">
+        <p>ログインに成功しました。トークンが保存されています。</p>
+        <button id="logout-btn">ログアウト</button>
+      </div>
+
+      <!-- 登録 / ログイン フォームエリア -->
+      <div id="auth-forms">
+        <div class="form-container">
+          <h3>新規登録</h3>
+          <form id="register-form" class="auth-form">
+            <input id="register-username" placeholder="ユーザー名" required />
+            <input type="password" id="register-password" placeholder="パスワード" required />
+            <button type="submit">登録する</button>
+          </form>
+          <p id="register-msg" class="msg"></p>
+        </div>
+
+        <div class="form-container" style="margin-top: 2rem;">
+          <h3>ログイン</h3>
+          <form id="login-form" class="auth-form">
+            <input id="login-username" placeholder="ユーザー名" required />
+            <input type="password" id="login-password" placeholder="パスワード" required />
+            <button type="submit">ログイン</button>
+          </form>
+          <p id="login-msg" class="msg"></p>
+        </div>
+      </div>
+
     </main>
   </body>
 </html>

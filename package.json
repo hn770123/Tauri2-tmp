@@ -1,0 +1,13 @@
+{
+  "name": "tauri-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "tauri-app"
+  ],
+  "scripts": {
+    "start:backend": "npm run start --workspace=backend",
+    "start:frontend": "npm run tauri dev --workspace=tauri-app"
+  }
+}
