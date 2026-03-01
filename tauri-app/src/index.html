@@ -10,43 +10,8 @@
 
   <body>
     <main class="container">
-      <h1>Hello World</h1>
-
-      <div class="row">
-        <a href="https://tauri.app" target="_blank">
-          <img src="/assets/tauri.svg" class="logo tauri" alt="Tauri logo" />
-        </a>
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-          target="_blank"
-        >
-          <img
-            src="/assets/javascript.svg"
-            class="logo vanilla"
-            alt="JavaScript logo"
-          />
-        </a>
-      </div>
-      <p>Click on the Tauri logo to learn more about the framework</p>
-
-      <form class="row" id="greet-form">
-        <input id="greet-input" placeholder="Enter a name..." />
-        <button type="submit">Greet</button>
-      </form>
-      <p id="greet-msg"></p>
-
-      <hr style="margin: 2rem 0; border: 1px solid #ccc;" />
-
-      <h2>認証システム (Node.js + SQLite)</h2>
-
-      <!-- ログイン後コンテンツ表示エリア -->
-      <div id="auth-content" style="display: none;">
-        <p>ログインに成功しました。トークンが保存されています。</p>
-        <button id="logout-btn">ログアウト</button>
-      </div>
-
-      <!-- 登録 / ログイン フォームエリア -->
       <div id="auth-forms">
+        <h2>認証システム (Node.js + SQLite)</h2>
         <div class="form-container">
           <h3>新規登録</h3>
           <form id="register-form" class="auth-form">
@@ -66,6 +31,40 @@
           </form>
           <p id="login-msg" class="msg"></p>
         </div>
+      </div>
+
+      <!-- ログイン後コンテンツ表示エリア -->
+      <div id="auth-content" style="display: none; text-align: right; margin-bottom: 1rem;">
+        <span>ログインしています </span>
+        <button id="logout-btn">ログアウト</button>
+        <hr style="margin: 1rem 0; border: 1px solid #ccc;" />
+      </div>
+
+      <div id="main-app-content" style="display: none;">
+        <h1>Hello World</h1>
+
+        <div class="row">
+          <a href="https://tauri.app" target="_blank">
+            <img src="/assets/tauri.svg" class="logo tauri" alt="Tauri logo" />
+          </a>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            target="_blank"
+          >
+            <img
+              src="/assets/javascript.svg"
+              class="logo vanilla"
+              alt="JavaScript logo"
+            />
+          </a>
+        </div>
+        <p>Click on the Tauri logo to learn more about the framework</p>
+
+        <form class="row" id="greet-form">
+          <input id="greet-input" placeholder="Enter a name..." />
+          <button type="submit">Greet</button>
+        </form>
+        <p id="greet-msg"></p>
       </div>
 
     </main>

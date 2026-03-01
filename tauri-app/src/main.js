@@ -51,15 +51,18 @@ function updateUI() {
   const token = getToken();
   const authForms = document.getElementById('auth-forms');
   const authContent = document.getElementById('auth-content');
+  const mainAppContent = document.getElementById('main-app-content');
 
   if (token) {
     // ログイン済み
-    authForms.style.display = 'none';
-    authContent.style.display = 'block';
+    if (authForms) authForms.style.display = 'none';
+    if (authContent) authContent.style.display = 'block';
+    if (mainAppContent) mainAppContent.style.display = 'block';
   } else {
     // 未ログイン
-    authForms.style.display = 'block';
-    authContent.style.display = 'none';
+    if (authForms) authForms.style.display = 'flex';
+    if (authContent) authContent.style.display = 'none';
+    if (mainAppContent) mainAppContent.style.display = 'none';
   }
 }
 
